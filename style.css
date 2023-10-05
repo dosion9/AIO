@@ -1,3 +1,4 @@
+/* ========== Reset ========== */
 * {
   padding: 0;
   margin: 0;
@@ -11,4 +12,74 @@ a {
 
 li {
   list-style-type: none;
+}
+
+/* ========== Default ========== */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  padding: 16px 0;
+  border: 1px solid red;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ========== Header ========== */
+
+.header__logo {
+  background-image: url(/asset/logo.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 70px;
+}
+
+.nav {
+  margin-left: 60px;
+  font-size: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.nav__item {
+  cursor: pointer;
+}
+
+.nav__item:hover {
+  opacity: 0.7;
+}
+
+/* ========== Main ========== */
+.section__item {
+  width: 50%;
+}
+
+.section__img {
+  width: 100%;
+}
+
+.section__text {
+  text-align: center;
+}
+.section__text > * {
+  margin-bottom: 16px;
+}
+
+.section__btn {
+  background-color: lightblue;
+  padding: 8px 48px;
+  border-radius: 16px;
+}
+
+.section__btn:hover {
+  opacity: 0.7;
+}
+/* ========== Foot ========== */
+.footer {
+  text-align: center;
 }
