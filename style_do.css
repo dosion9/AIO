@@ -1,2 +1,79 @@
 /* CSS 작성하는 공간입니다. */
 /* 너무 부담 갖지마시고 테스트해본다 생각하고 이것 저것 시도해보세요 */
+.nav-sub {
+  /* display: none; */
+  transition: 0.3s;
+  background-color: aqua;
+  opacity: 1;
+}
+
+.nav__item:hover > .nav-sub {
+  height: 100%;
+}
+
+/* ===================================== */
+.team_info__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team_info__item {
+  background-color: lightblue;
+  border-radius: 50px;
+  position: relative;
+  padding: 12px 16px 12px 76px;
+  font-weight: 600;
+}
+
+.team_info__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  transition: 0.3s;
+}
+
+.team_info__item:hover {
+  opacity: 0.8;
+}
+
+.team_info__item:hover .team_info__img {
+  transform: translateY(-10px);
+}
+
+/*  */
+.introduction > * {
+  margin-bottom: 0.6em;
+}
+
+.introduction__name {
+  position: relative;
+  margin-left: 80px;
+  font-size: 48px;
+}
+
+.introduction__badge {
+  position: absolute;
+  background-color: lightblue;
+  font-size: 16px;
+  padding: 8px 16px;
+  left: -80px;
+}
+
+.introduction__list {
+  margin-top: 32px;
+}
+
+.introduction__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.introduction__item > span {
+  font-size: 20px;
+  width: 120px;
+  background-color: lightblue;
+  padding: 8px 16px;
+  margin-right: 16px;
+}
