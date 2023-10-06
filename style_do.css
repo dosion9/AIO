@@ -65,6 +65,7 @@ header {
 
 .nav__item {
   position: relative;
+  margin-right: 32px;
 }
 
 .header__text {
@@ -94,7 +95,8 @@ header:hover .header-bg {
   background-color: black;
 }
 
-header:hover .header__logo {
+header:hover .header__logo,
+footer .header__logo {
   filter: invert(100);
 }
 
@@ -137,11 +139,14 @@ header:hover .nav-sub {
   opacity: 0.7;
 }
 /* ========== Foot ========== */
-.footer {
-  text-align: center;
+footer {
+  background-color: black;
+  color: white;
 }
 
-/* =============== */
+footer > .row {
+  justify-content: center;
+}
 
 /* ===================================== */
 .team_info__list {
