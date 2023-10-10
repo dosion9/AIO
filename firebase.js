@@ -38,10 +38,17 @@ guestbookBtn.addEventListener("click", async () => {
     content: guestbookContent.value,
     timeStemp: new Date(),
   };
-  await addDoc(collection(db, "guestbook"), doc).then(() => {
-    alert("작성완료");
-    return location.reload();
-  });
+
+  if (!doc.name) {
+    return alert("닉네임을 입력해주세요!");
+  } else if (!doc.content) {
+    return alert("내용을 입력해주세요!");
+  } else {
+    await addDoc(collection(db, "guestbook"), doc).then(() => {
+      alert("작성완료!\n방명록을 남겨주셔서 감사합니다!");
+      return location.reload();
+    });
+  }
 });
 
 //Get
@@ -61,7 +68,7 @@ docs.forEach((doc) => {
     <div class="guestbook__date">${printTime(DBdata.timeStemp)}</div>
   </li>`;
 
-  guestbook.insertAdjacentHTML("beforebegin", temp);
+  guestbook.insertAdjacentHTML("beforeend", temp);
 });
 
 /**
