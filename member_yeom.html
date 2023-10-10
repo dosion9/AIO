@@ -7,33 +7,161 @@
     <title>AIO | 염혜원</title>
   </head>
   <body>
-
-
     <header class="header">
+      <div class="header-bg"></div>
+
       <div class="container row">
         <a href="/index.html" class="header__logo"></a>
         <nav>
           <ul class="nav">
             <li class="nav__item">
-              <a href="/member_do.html">Do</a>
+              <a href="/member_do.html" class="header__text">Member</a>
+              <ul class="nav-sub">
+                <li>
+                  <a href="/member_do.html" class="header__text">Do</a>
+                </li>
+                <li>
+                  <a href="/member_han.html" class="header__text">Han</a>
+                </li>
+                <li>
+                  <a href="/member_shim.html" class="header__text">Shim</a>
+                </li>
+                <li>
+                  <a href="/member_yeom.html" class="header__text">Yeom</a>
+                </li>
+              </ul>
             </li>
             <li class="nav__item">
-              <a href="/member_han.html">Han</a>
-            </li>
-            <li class="nav__item">
-              <a href="/member_shim.html">Shim</a>
-            </li>
-            <li class="nav__item">
-              <a href="/member_yeom.html">Yeom</a>
+              <a href="/guestbook.html" class="header__text">Guestbook</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section class="container"></section>
 
-      <section class="container"></section>
+    <main>
+      <sectiion class="container row">
+        <h3 class="page__info">Member</h3>
+      </sectiion>
+
+      <section class="container row member__card-group">
+        <div class="member__card-wrap">
+          <a href="/member_do.html" class="member__card">
+            <div class="member__card_img-wrap">
+              <img
+                src="./asset/gatherImg/도경구님.png"
+                class="member__card_img"
+                alt="게더타운 도경구님 캐릭터"
+              />
+            </div>
+            <div class="shim__card-body">
+              <p>팀장</p>
+              <h1>도경구</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="member__card-wrap">
+          <a href="/member_han.html" class="member__card">
+            <div class="member__card_img-wrap">
+              <img
+                src="./asset/gatherImg/한지우님.png"
+                class="member__card_img"
+                alt="게더타운 한지우님 캐릭터"
+              />
+            </div>
+            <div class="shim__card-body">
+              <p>팀원</p>
+              <h1>한지우</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="member__card-wrap">
+          <a href="/member_shim.html" class="member__card">
+            <div class="member__card_img-wrap">
+              <img
+                src="./asset/gatherImg/심재영님.png"
+                class="member__card_img"
+                alt="게더타운 심재영님 캐릭터"
+              />
+            </div>
+            <div class="shim__card-body">
+              <p>팀원</p>
+              <h1>심재영</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="member__card-wrap">
+          <a href="/member_yeom.html" class="member__card member__card-active">
+            <div class="member__card_img-wrap">
+              <img
+                src="./asset/gatherImg/염혜원님.png"
+                class="member__card_img"
+                alt="게더타운 염혜원님 캐릭터"
+              />
+            </div>
+            <div class="shim__card-body">
+              <p>팀원</p>
+              <h1>염혜원</h1>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="container">
+        <!-- ========== 지우님 파트 시작 ========== -->
+        <!-- 이것 저것 시도해보면서 작성해보세요! -->
+        <div class="row" style="align-items: normal">
+          <div class="member__introduction">
+            <h3 class="member__name">
+              <span class="member__badge member__badge-name">팀원</span>염혜원
+            </h3>
+            <h1 class="member__motto">"부족하더라도 열심히 하겠습니다."</h1>
+            <div class="member__description-wrap">
+              <p class="member__description">
+                저는 모르는 것을 찾아보면서 끝까지 하는 성격입니다.
+              </p>
+              <p class="member__description">
+                또한 맡은 일을 최대한 잘 만들어 보려고 노력하는 스타일입니다.
+              </p>
+              <p class="member__description">
+                고등학교 때 코딩수업을 재밌게 들은 기억이 있어 한번 도전해보게
+                되었습니다.
+              </p>
+            </div>
+
+            <p class="member__info">
+              <span class="member__badge">MBTI</span> ISFP
+            </p>
+            <p class="member__info">
+              <span class="member__badge">취미</span> 유튜브로 힐링영상 보기,
+              웹툰보기
+            </p>
+            <p class="member__info">
+              <span class="member__badge">GITHUB</span
+              ><a href="https://github.com/Yeomhyewon"
+                >https://github.com/Yeomhyewon</a
+              >
+            </p>
+            <p class="member__info">
+              <span class="member__badge">블로그</span
+              ><a href="https://zheldqodnsmstkfka.tistory.com/"
+                >https://zheldqodnsmstkfka.tistory.com/</a
+              >
+            </p>
+          </div>
+          <div class="member__img-wrap">
+            <img
+              class="member__img"
+              src="https://github.com/dosion9/AIO/blob/yeom/asset/pic_yeom.jpg?raw=true"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- ========== 지우님 파트 종료 ========== -->
+      </section>
     </main>
     <footer class="footer">
       <div class="container row">
@@ -41,6 +169,5 @@
         <p>Copyrightⓒ2023 by AIO</p>
       </div>
     </footer>
-
   </body>
 </html>
