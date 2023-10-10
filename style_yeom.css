@@ -12,7 +12,6 @@
     
     display: flex;
     padding: 5px 0px 5px 0px;
-    
     align-items: center;
     border: 1px solid red;
     
@@ -20,28 +19,44 @@
 
 .about {
     width: 600px;
-    
     text-align: center;
     margin-top: 30px;
     
 }
 
 .btn_back {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin: 20px 100px 0px 100px;
+    border-radius: 15px;
 }
 
 .btn {
     font-size: 15pt;
-    background-color: rgb(255, 170, 170);
     color: white;
-    padding: 5px 10px 5px 10px;
-    border-radius: 15px;
     transition: all 0.1s;
-    border-bottom: 2px solid rgb(252, 144, 144);
+}
 
+.btn, .btn_back {
+    border-bottom: 3px solid rgb(252, 144, 144);
+    background-color: rgb(255, 170, 170);
+    padding: 5px 10px 5px 10px;
 }
 
 .btn_back:active{
     transform: translateY(3px);
     
+}
+
+h1 {
+    line-height: 80px;
+}
+
+p {
+    text-align: justify;
+    padding: 0px 100px;
+   
+}
+
+img {
+    padding: 15px 0px;
 }
