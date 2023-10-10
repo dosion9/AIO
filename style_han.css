@@ -1,2 +1,40 @@
 /* CSS 작성하는 공간입니다. */
 /* 너무 부담 갖지마시고 테스트해본다 생각하고 이것 저것 시도해보세요 */
+.row {
+    height: 600px;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 100px 100px 100px;
+
+}
+
+.mbti {
+    width: 500px;
+    height: 600px;
+    background-color: yellow;
+
+}
+
+.photo {
+    width: 500px;
+    height: 600px;
+    background-color: green;
+}
+
+.badge {
+    background-color: black;
+    color: white;
+    width: 120px;
+    border-radius: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+    display: inline-block;
+text-align: center;
+
+
+}
+.ppp {
+   text-align: center;
+}
