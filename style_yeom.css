@@ -50,6 +50,12 @@ h1 {
     line-height: 80px;
 }
 
+h3{
+    text-align: justify; 
+    padding: 0px 100px;
+    margin: 5px 0px;
+}
+
 p {
     text-align: justify;
     padding: 0px 100px;
@@ -58,4 +64,8 @@ p {
 
 img {
     padding: 15px 0px;
+}
+
+.Meet {
+    margin-top: 10px;
 }
