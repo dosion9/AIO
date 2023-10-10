@@ -1,90 +1,138 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style_yeom.css" /> -->
+    <title>AIO</title>
+    <!-- LottieFiles - dotlottie -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- <link rel="stylesheet" href="style_yeom.css" /> -->
-  <title>AIO</title>
-  <!-- ★★★★★ 혜원님 작성할 문서 ★★★★★ -->
-</head>
+  <body>
+    <header class="header">
+      <div class="header-bg"></div>
 
-<body>
-  <header class="header">
-    <div class="header-bg"></div>
-
-    <div class="container row">
-      <a href="/index.html" class="header__logo"></a>
-      <nav>
-        <ul class="nav">
-          <li class="nav__item">
-            <a href="/member_do.html" class="header__text">Member</a>
-            <ul class="nav-sub">
-              <li>
-                <a href="/member_do.html" class="header__text">Do</a>
-              </li>
-              <li>
-                <a href="/member_han.html" class="header__text">Han</a>
-              </li>
-              <li>
-                <a href="/member_shim.html" class="header__text">Shim</a>
-              </li>
-              <li>
-                <a href="/member_yeom.html" class="header__text">Yeom</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <a href="/guestbook.html" class="header__text">Guestbook</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <!-- ========== 혜원님 파트 시작 ========== -->
-    <!-- 이것 저것 시도해보면서 작성해보세요! -->
-    <div class="yeom__all2">
-      <div class="yeom__all">
-        <div>
-          <img src="https://via.placeholder.com/600x700" class="yeom__main__img">
-        </div>
-        <div class="yeom__about">
-          <h1 class="yeom__main__h1">AIO팀은</h1>
-          <p class="yeom__main__p">
-            저희는 A-10조 입니다.
-          </p>
-        </div>
+      <div class="container row">
+        <a href="./index.html" class="logo-wrap">
+          <img src="./asset/logo.png" alt="AIO Logo" class="logo" />
+        </a>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="./member_do.html" class="header__text">Member</a>
+              <ul class="nav-sub">
+                <li>
+                  <a href="./member_do.html" class="header__text">Do</a>
+                </li>
+                <li>
+                  <a href="./member_han.html" class="header__text">Han</a>
+                </li>
+                <li>
+                  <a href="./member_shim.html" class="header__text">Shim</a>
+                </li>
+                <li>
+                  <a href="./member_yeom.html" class="header__text">Yeom</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="./guestbook.html" class="header__text">Guestbook</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    </div>
-    <div class="yeom__all2">
-      <div class="yeom__all">
-        <div class="yeom__about">
-          <h1 class="yeom__main__h1">AIO팀은</h1>
-          <p class="yeom__main__p">
-            계획한 것을 어떻게든 구현해보고, 모르는 것이 있어도 부딪치면서 배우려고 합니다!
+    </header>
+
+    <main>
+      <!-- ========== 혜원님 파트 시작 ========== -->
+      <!-- 이것 저것 시도해보면서 작성해보세요! -->
+      <section class="container row">
+        <div class="main__img-wrap">
+          <dotlottie-player
+            src="https://lottie.host/3cb4b00d-3eff-49bd-8027-10968cfe8bca/KizbWQsZgK.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+        <div class="main__introduce">
+          <p class="main__introduce-word">직관적</p>
+          <h1 class="main__introduce-main">AIO 팀은 A-10 팀 입니다.</h1>
+          <p class="main__introduce-sub">
+            저희를 소개하는 프로젝트인 만큼 직관적인 게 좋다 생각되어 AIO로
+            정하게 되었습니다.
           </p>
-          
+        </div>
+      </section>
+
+      <section class="container row">
+        <div class="main__introduce">
+          <p class="main__introduce-word">노력형</p>
+          <h1 class="main__introduce-main">
+            AIO 팀원들은 끊임없이 노력합니다.
+          </h1>
+          <p class="main__introduce-sub">
+            정산을 오르는 등반가처럼 AIO 팀원들은 목표를 위해 공부하고, 문제와
+            부딪치며, 목표 달성을 위해 노력합니다!
+          </p>
+        </div>
+        <div class="main__img-wrap">
+          <dotlottie-player
+            src="https://lottie.host/e543e1a9-5344-416d-97d3-472d10389c63/AwYn2lUFS1.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+      </section>
+
+      <section class="container row">
+        <div class="main__img-wrap">
+          <dotlottie-player
+            src="https://lottie.host/e3713ce6-911f-445a-a29e-de2096a8bbb9/soZdPtvCc1.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; height: 100%"
+            direction="1"
+            mode="normal"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+        <div class="main__introduce">
+          <p class="main__introduce-word">상호학습</p>
+          <h1 class="main__introduce-main">AIO 팀은 함께 공부합니다.</h1>
+          <p class="main__introduce-sub">
+            AIO 팀은 함께 공부하며, 지식을 공유하고, 서로에게 미니 튜터가 되어
+            지식을 쌓고, 함께 성장합니다.
+          </p>
+
           <div class="yeom__btn_back">
-            <a href="./member_do.html" class="yeom__btn">AIO 멤버들을 만나러 가봅시다!</a>
+            <a href="./member_do.html" class="yeom__btn"
+              >AIO 멤버들 만나러 가기</a
+            >
           </div>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/600x700" class="yeom__main__img">
-        </div>
-      </div>
-    </div>
-    <!-- ========== 혜원님 파트 종료 ========== -->
-  </main>
-  <footer class="footer">
-    <div class="container row">
-      <a href="/index.html" class="header__logo"> </a>
-      <p>Copyrightⓒ2023 by AIO</p>
-    </div>
-  </footer>
-</body>
+      </section>
 
+      <!-- ========== 혜원님 파트 종료 ========== -->
+    </main>
+    <footer class="footer">
+      <div class="container row">
+        <a href="./index.html" class="logo-wrap">
+          <img src="./asset/logo.png" alt="AIO Logo" class="logo" />
+        </a>
+        <p>Copyrightⓒ2023 by AIO</p>
+      </div>
+    </footer>
+  </body>
 </html>

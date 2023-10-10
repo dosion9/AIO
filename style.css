@@ -18,6 +18,8 @@ li {
 :root {
   --color-main: #b4cbf0;
   --color-dark: #526685;
+  --text-sub: rgb(110, 110, 110);
+  --box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* ========== Default ========== */
@@ -25,7 +27,7 @@ li {
   max-width: 1200px;
   width: 90%;
   margin: auto;
-  padding: 16px 0;
+  padding: 24px 0;
   /* border: 1px solid red; */
 }
 
@@ -64,7 +66,7 @@ li {
 
 header {
   position: relative;
-  box-shadow: 0px 0px 3px 1px black;
+  box-shadow: var(--box-shadow);
   z-index: 10;
 }
 
@@ -77,15 +79,14 @@ header {
   transition: 0.3s;
 }
 
-.header__logo {
-  background-image: url(/asset/logo.jpg);
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  align-self: baseline;
+.logo-wrap {
   width: 100px;
-  height: 70px;
   z-index: 2;
+  transition: 0.3s;
+}
+
+.logo {
+  width: 100%;
   transition: 0.3s;
 }
 
@@ -117,28 +118,35 @@ header {
   display: none;
 }
 
-.nav-sub > li {
+.nav-sub li {
   padding: 8px 0;
 }
 
 /* header hover */
-
-header:hover .header-bg {
-  height: 240%;
-  background-color: var(--color-dark);
+header:hover {
+  box-shadow: none;
 }
 
-header:hover .header__logo,
-footer .header__logo {
+header:hover .header-bg {
+  height: 260%;
+  background-color: var(--color-dark);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+}
+
+header:hover .logo,
+footer .logo {
   filter: invert(100);
 }
 
-header:hover .header__text {
+header:hover .header__text,
+header:hover .logo {
   color: white;
   opacity: 0.7;
 }
 
-header:hover .header__text:hover {
+header:hover .header__text:hover,
+header:hover .logo:hover {
   opacity: 1;
 }
 
@@ -150,16 +158,42 @@ header:hover .nav-sub {
 /* ========== Main ========== */
 /* ========== index.html - main section 시작 ========== */
 
-.yeom__all2 {
-  max-width: 1200px;
-  margin: auto;
-  width: 90%;
+.main__img-wrap {
+  width: 50%;
 }
 
-.yeom__all {
-  display: flex;
-  padding: 5px 0px 5px 0px;
-  align-items: center;
+.main__img {
+  width: 100%;
+}
+
+.main__introduce {
+  width: 40%;
+  margin: auto;
+}
+
+.main__introduce-word {
+  color: white;
+  background-color: var(--color-main);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.main__introduce-main {
+  font-size: 28px;
+  margin-bottom: 0.5em;
+}
+
+.main__introduce-sub {
+  color: var(--text-sub);
+  line-height: 30px;
+}
+
+.main__introduce-word,
+.main__introduce-sub {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .yeom__about {
@@ -202,13 +236,16 @@ header:hover .nav-sub {
   font-size: 20px;
 }
 
-.yeom__main__img {
-  padding: 15px 0px;
-}
 /* ========== index.html - main section 종료 ========== */
 
 /* ========== MEMBER.HTML ========== */
 /* ========== MEMBER.HTML - NAV 시작 ========== */
+.page__info-wrap {
+  background-color: var(--color-main);
+}
+.page__info-wrap > .container {
+  padding: 12px 0;
+}
 
 .member__card-group {
   justify-content: space-around;
@@ -323,11 +360,16 @@ header:hover .nav-sub {
 
 .member__img-wrap {
   width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .member__img {
-  max-width: 400px;
-  height: 600px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  border: 15px double var(--color-main);
 }
 
 /* ========== MEMBER.HTML - MAIN 종료 ========== */
@@ -335,6 +377,7 @@ header:hover .nav-sub {
 footer {
   background-color: var(--color-dark);
   color: white;
+  padding: 16px 0;
 }
 
 footer > .row {
@@ -361,6 +404,7 @@ footer > .row {
   border: 1px solid var(--color-dark);
   border-radius: 15px;
   overflow: hidden;
+  width: 100%;
 }
 
 .guestbook__input {
@@ -444,5 +488,6 @@ footer > .row {
 }
 
 .guestbook__content {
-  width: 80%;
+  width: 70%;
+  margin: auto;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>AIO | 도경구</title>
+    <title>AIO | 방명록</title>
   </head>
   <body>
     <!-- ========== HEADER ========== -->
@@ -13,28 +13,30 @@
       <div class="header-bg"></div>
 
       <div class="container row">
-        <a href="/index.html" class="header__logo"></a>
+        <a href="./index.html" class="logo-wrap">
+          <img src="./asset/logo.png" alt="AIO Logo" class="logo" />
+        </a>
         <nav>
           <ul class="nav">
             <li class="nav__item">
-              <a href="/member_do.html" class="header__text">Member</a>
+              <a href="./member_do.html" class="header__text">Member</a>
               <ul class="nav-sub">
                 <li>
-                  <a href="/member_do.html" class="header__text">Do</a>
+                  <a href="./member_do.html" class="header__text">Do</a>
                 </li>
                 <li>
-                  <a href="/member_han.html" class="header__text">Han</a>
+                  <a href="./member_han.html" class="header__text">Han</a>
                 </li>
                 <li>
-                  <a href="/member_shim.html" class="header__text">Shim</a>
+                  <a href="./member_shim.html" class="header__text">Shim</a>
                 </li>
                 <li>
-                  <a href="/member_yeom.html" class="header__text">Yeom</a>
+                  <a href="./member_yeom.html" class="header__text">Yeom</a>
                 </li>
               </ul>
             </li>
             <li class="nav__item">
-              <a href="/guestbook.html" class="header__text">Guestbook</a>
+              <a href="./guestbook.html" class="header__text">Guestbook</a>
             </li>
           </ul>
         </nav>
@@ -43,9 +45,11 @@
 
     <!-- ========== MAIN ========== -->
     <main>
-      <section class="container row">
-        <p><b style="font-size: 1.5em">Guestbook</b></p>
-      </section>
+      <div class="section-wrap page__info-wrap">
+        <sectiion class="container row">
+          <h2 class="page__info">Guestbook</h2>
+        </sectiion>
+      </div>
 
       <section class="container">
         <div class="guestbook__input-wrap">
@@ -87,9 +91,11 @@
       </section>
     </main>
     <!-- ========== Footer ========== -->
-    <footer>
+    <footer class="footer">
       <div class="container row">
-        <a href="/index.html" class="header__logo"> </a>
+        <a href="./index.html" class="logo-wrap">
+          <img src="./asset/logo.png" alt="AIO Logo" class="logo" />
+        </a>
         <p>Copyrightⓒ2023 by AIO</p>
       </div>
     </footer>
