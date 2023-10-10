@@ -54,6 +54,7 @@ header:hover {
   cursor: pointer;
   position: relative;
   padding: 16px;
+  margin-right: 32px;
 }
 
 .nav__item:hover > a {

@@ -20,7 +20,7 @@ li {
   width: 90%;
   margin: auto;
   padding: 16px 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .row {
@@ -33,6 +33,7 @@ li {
 
 header {
   position: relative;
+  box-shadow: 0px 0px 3px 1px black;
 }
 
 .header-bg {
@@ -82,6 +83,7 @@ header {
   opacity: 0;
   transition: 0.1s;
   font-size: 16px;
+  display: none;
 }
 
 .nav-sub > li {
@@ -111,6 +113,7 @@ header:hover .header__text:hover {
 
 header:hover .nav-sub {
   opacity: 1;
+  display: block;
 }
 
 /* ========== Main ========== */
@@ -213,4 +216,112 @@ footer > .row {
   background-color: lightblue;
   padding: 8px 16px;
   margin-right: 16px;
+}
+
+/* ========== GUEST BOOK ========== */
+.guestbook__input-wrap {
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.guestbook__header {
+  background-color: black;
+  color: white;
+  padding: 5px 5px 5px 15px;
+}
+
+.guestbook__input-group {
+  padding: 16px;
+}
+
+.guestbook {
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.guestbook__input {
+  height: 32px;
+  border: 0;
+  border-radius: 16px;
+  outline: none;
+  padding: 0 16px;
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+.guestbook__btn {
+  height: 32px;
+  border: 0;
+  border-radius: 16px;
+  outline: none;
+  padding: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(170, 182, 250);
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.guestbook__btn:hover {
+  opacity: 0.7;
+  background-color: white;
+  color: blue;
+  box-shadow: 0px 0px 1px 2px rgba(89, 89, 255, 0.671);
+}
+
+#guestbookName {
+  width: 150px;
+}
+
+#guestbookContent {
+  width: 100%;
+}
+
+.guestbook__input:focus,
+.guestbook__input:hover,
+.guestbook__input:active {
+  background-color: white;
+  box-shadow: 0px 0px 1px 2px rgba(89, 89, 255, 0.671);
+}
+
+.guestbook-wrap {
+  width: 100%;
+}
+
+.guestbook__item {
+  min-height: 32px;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+}
+
+.guestbook__item:first-child {
+  background-color: black;
+  color: white;
+}
+
+.guestbook__item:last-child {
+  border-bottom: none;
+}
+
+.guestbook__name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.guestbook__name,
+.guestbook__date {
+  width: 150px;
+  text-align: center;
+}
+
+.guestbook__date {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.guestbook__content {
+  width: 80%;
 }

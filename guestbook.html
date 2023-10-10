@@ -33,6 +33,9 @@
                 </li>
               </ul>
             </li>
+            <li class="nav__item">
+              <a href="/guestbook.html" class="header__text">Guestbook</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -43,23 +46,43 @@
         <p><b style="font-size: 1.5em">Guestbook</b></p>
       </section>
 
-      <section class="container row">
-        <form action="" method="post">
-          <input type="text" />
-          <input type="text" />
-          <input type="button" value="작성" />
-        </form>
+      <section class="container">
+        <div class="guestbook__input-wrap">
+          <div class="guestbook__header"><b>방명록 작성</b></div>
+          <div class="guestbook__input-group row">
+            <input
+              type="text"
+              id="guestbookName"
+              class="guestbook__input"
+              placeholder="닉네임"
+            />
+            <input
+              type="text"
+              id="guestbookContent"
+              class="guestbook__input"
+              placeholder="응원의 말을 남겨주세요!"
+            />
+            <input
+              type="button"
+              value="저장하기"
+              id="guestbookPostBtn"
+              class="guestbook__btn"
+            />
+          </div>
+        </div>
       </section>
       <section class="container row">
-        <div class="guestbook-wrap">
-          <ul class="guestbook">
-            <li class="guestbook__item row">
-              <div class="guestbook__name">아바사자</div>
-              <div class="guestbook__content">화이팅</div>
-              <div class="guestbook__date">2023.10.06</div>
-            </li>
-          </ul>
-        </div>
+        <ul class="guestbook" id="guestbook">
+          <li class="guestbook__item row">
+            <div class="guestbook__name"><b>닉네임</b></div>
+            <div class="guestbook__content" style="text-align: center">
+              <b>내용</b>
+            </div>
+            <div class="guestbook__date" style="opacity: 1; font-size: 16px">
+              <b>작성일</b>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
     <!-- ========== Footer ========== -->
@@ -69,5 +92,6 @@
         <p>Copyrightⓒ2023 by AIO</p>
       </div>
     </footer>
+    <script type="module" src="./firebase.js"></script>
   </body>
 </html>
