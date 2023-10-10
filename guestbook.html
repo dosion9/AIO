@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_do.css" />
+
+    <title>AIO | 도경구</title>
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="header-bg"></div>
+
+      <div class="container row">
+        <a href="/index.html" class="header__logo"></a>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="/member_do.html" class="header__text">Member</a>
+              <ul class="nav-sub">
+                <li>
+                  <a href="/member_do.html" class="header__text">Do</a>
+                </li>
+                <li>
+                  <a href="/member_do.html" class="header__text">Han</a>
+                </li>
+                <li>
+                  <a href="/member_do.html" class="header__text">Shim</a>
+                </li>
+                <li>
+                  <a href="/member_do.html" class="header__text">Yeom</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="/guestbook.html" class="header__text">Guestbook</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ========== MAIN ========== -->
+    <main>
+      <section class="container row">
+        <p><b style="font-size: 1.5em">Guestbook</b></p>
+      </section>
+
+      <section class="container">
+        <div class="guestbook__input-wrap">
+          <div class="guestbook__header"><b>방명록 작성</b></div>
+          <div class="guestbook__input-group row">
+            <input
+              type="text"
+              id="guestbookName"
+              class="guestbook__input"
+              placeholder="닉네임"
+            />
+            <input
+              type="text"
+              id="guestbookContent"
+              class="guestbook__input"
+              placeholder="응원의 말을 남겨주세요!"
+            />
+            <input
+              type="button"
+              value="저장하기"
+              id="guestbookPostBtn"
+              class="guestbook__btn"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="container row">
+        <ul class="guestbook" id="guestbook">
+          <li class="guestbook__item row">
+            <div class="guestbook__name"><b>닉네임</b></div>
+            <div class="guestbook__content" style="text-align: center">
+              <b>내용</b>
+            </div>
+            <div class="guestbook__date" style="opacity: 1; font-size: 16px">
+              <b>작성일</b>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- ========== Footer ========== -->
+    <footer>
+      <div class="container row">
+        <a href="/index.html" class="header__logo"> </a>
+        <p>Copyrightⓒ2023 by AIO</p>
+      </div>
+    </footer>
+    <script type="module" src="./firebase.js"></script>
+  </body>
+</html>
