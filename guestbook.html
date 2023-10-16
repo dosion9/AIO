@@ -54,25 +54,39 @@
       <section class="container">
         <div class="guestbook__input-wrap">
           <div class="guestbook__header"><b>방명록 작성</b></div>
-          <div class="guestbook__input-group row">
-            <input
-              type="text"
-              id="guestbookName"
-              class="guestbook__input"
-              placeholder="닉네임"
-            />
-            <input
-              type="text"
-              id="guestbookContent"
-              class="guestbook__input"
-              placeholder="응원의 말을 남겨주세요!"
-            />
-            <input
-              type="button"
-              value="저장하기"
-              id="guestbookPostBtn"
-              class="guestbook__btn"
-            />
+          <div class="guestbook__input-group">
+            <div class="row">
+              <div>
+                <input
+                  type="text"
+                  id="guestbookName"
+                  class="guestbook__input"
+                  placeholder="닉네임"
+                />
+                <input
+                  type="password"
+                  id="guestbookPassword"
+                  class="guestbook__input"
+                  placeholder="비밀번호"
+                />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  value="저장하기"
+                  id="guestbookPostBtn"
+                  class="guestbook__btn"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <textarea
+                type="text"
+                id="guestbookContent"
+                class="guestbook__input guestbook__input-content"
+                placeholder="응원의 말을 남겨주세요!"
+              ></textarea>
+            </div>
           </div>
         </div>
       </section>
@@ -85,6 +99,9 @@
             </div>
             <div class="guestbook__date" style="opacity: 1; font-size: 16px">
               <b>작성일</b>
+            </div>
+            <div class="guestbook__name">
+              <b>삭제</b>
             </div>
           </li>
         </ul>
