@@ -400,6 +400,14 @@ footer > .row {
   padding: 16px;
 }
 
+.guestbook__input-group > .row {
+  margin-bottom: 16px;
+}
+
+.guestbook__input-group > .row:last-child {
+  margin-bottom: 0px;
+}
+
 .guestbook {
   border: 1px solid var(--color-dark);
   border-radius: 15px;
@@ -415,6 +423,11 @@ footer > .row {
   padding: 0 16px;
   background-color: lightgray;
   transition: 0.3s;
+}
+
+.guestbook__input-content {
+  padding: 16px;
+  min-height: 80px;
 }
 
 .guestbook__btn {
@@ -459,7 +472,8 @@ footer > .row {
 .guestbook__item {
   min-height: 32px;
   border-bottom: 1px solid var(--color-dark);
-  padding: 5px 0;
+  padding: 12px 5%;
+  position: relative;
 }
 
 .guestbook__item:first-child {
@@ -478,7 +492,7 @@ footer > .row {
 
 .guestbook__name,
 .guestbook__date {
-  width: 150px;
+  width: 10%;
   text-align: center;
 }
 
@@ -488,6 +502,30 @@ footer > .row {
 }
 
 .guestbook__content {
-  width: 70%;
+  width: 55%;
   margin: auto;
+}
+
+.guestbook__item > .guestbook__btn-toggle {
+  opacity: 0;
+}
+
+.guestbook__item:hover > .guestbook__btn-toggle {
+  opacity: 1;
+}
+
+.guestbook_delete-form {
+  right: 2.5%;
+  position: absolute;
+  background-color: var(--color-dark);
+  padding: 5px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.guestbook__item-active > .guestbook_delete-form {
+  opacity: 1;
+  visibility: visible;
 }
